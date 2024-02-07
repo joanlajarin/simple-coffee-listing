@@ -46,14 +46,17 @@
     padding-right: 12px;
     border-radius: 5px;
     background-color: #1B1D1F;
-
+    outline: none;
+    border: 0;
 }
 .btn-collect:hover {
     background-color: #6F757C;
+    outline: none;
     border: 0;
 }
-.btn-collect:active {
+.btn-collect:active, .btn-collect:focus {
     background-color: #6F757C;
+    outline: none;
     border: 0;
 }
 .vector-background {
