@@ -22,10 +22,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 5px;
 }
 .name-card-coffee {
     font-size: 14px;
     margin-top: 10px;
+    color: #FEF7EE;
 }
 .tag-price-card-coffee {
     background-color: #BEE3CC;
@@ -43,6 +45,7 @@
 }
 .rating-card-coffee{
     font-size: 14px;
+    color: #FEF7EE;
 }
 .votes-card-coffee {
     font-size: 12px;

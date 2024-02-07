@@ -26,7 +26,7 @@ export default function CollectionCard() {
             <h1 className="title-collection">Our Collection</h1>
             <p className="p-collection">Introducing our Coffee Collection, a selection of unique coffees from different roast types and origins, expertly roasted in small batches and shipped fresh weekly.</p>
             <div className="btn-collections">
-                <button className="btn-collect" id="btn-all-products" onClick={showAllOfCoffees}>All products</button>
+                <button className="btn-collect" id="btn-all-products" autoFocus onClick={showAllOfCoffees}>All products</button>
                 <button className="btn-collect" id="btn-available-now" onClick={showAvailableListOfCoffees}>Available Now</button>
             </div>
             <ListOfCoffes state={available}/>
