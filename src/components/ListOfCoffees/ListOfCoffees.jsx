@@ -1,12 +1,15 @@
 import React from "react"
-import { useState,useEffect } from "react"
 import getCoffes from '../../services/getCoffes'
 import Coffee from "../Coffee/Coffee"
 import './ListOfCoffees.css'
 
-export default function LisOfCoffes() {
+export default function ListOfCoffes(available) {
 
-    const coffes = getCoffes()
+    console.log(available.state)
+    const state = available.state
+    let coffes
+    state == true ? coffes = getCoffes().filter((coffee => coffee.available === true)) 
+    : coffes = getCoffes()
     
     return(
         <div className="list-of-coffes">
