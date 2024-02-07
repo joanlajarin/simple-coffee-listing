@@ -1,0 +1,81 @@
+.card-collection {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 160px;
+    background-color: #1B1D1F;
+    border-radius: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    width: fit-content;
+    left: 50%;
+    transform: translate(-50%);
+    overflow: hidden;
+}
+
+.title-collection{
+    margin: 0;
+    margin-top: 80px;
+    font-size: 32px;
+    z-index: 1;
+}
+
+.p-collection {
+    margin: 0;
+    margin-top: 8px;
+    font-size: 16px;
+    color: #6F757C;
+    text-align: center;
+    z-index: 1;
+    width: 310px;
+}
+
+.btn-collections {
+    display: flex;
+    gap: 12px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+.btn-collect{
+    color: #FEF7EE;
+    font-size: 14px;
+    padding: 8px;
+    padding-left: 12px;
+    padding-right: 12px;
+    border-radius: 5px;
+    background-color: #1B1D1F;
+
+}
+.btn-collect:hover {
+    background-color: #6F757C;
+    border: 0;
+}
+.btn-collect:active {
+    background-color: #6F757C;
+    border: 0;
+}
+.vector-background {
+    position: absolute;
+    z-index: 0;
+    left: 50%;
+}
+@media screen and (min-width: 641px) {
+    .card-collection {
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+    .p-collection {
+        width: 500px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .card-collection {
+        padding-left: 124px;
+        padding-right: 124px;
+    }
+    .p-collection {
+        width: 475px;
+    }
+}
