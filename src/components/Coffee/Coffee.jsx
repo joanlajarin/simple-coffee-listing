@@ -6,10 +6,9 @@ export default function Coffee(props) {
     
 
     const { coffee } = props 
-    console.log(coffee)
 
     return (
-        <div className="card-coffee">
+        <div key={coffee.id} className="card-coffee">
             {
                 coffee.popular && (
                     <div className="tag-popular">Popular</div>

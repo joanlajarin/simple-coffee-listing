@@ -12,6 +12,7 @@
     left: 50%;
     transform: translate(-50%);
     overflow: hidden;
+    padding-bottom: 100px;
 }
 
 .title-collection{
