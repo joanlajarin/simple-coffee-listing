@@ -1,21 +1,30 @@
 import React from "react";
+import './Coffee.css'
+import star from '../../../public/images/Star_fill.svg'
 
 export default function Coffee(props) {
     
-    const coffeExample =  {
-        "id": 1,
-        "name": "Cappuccino",
-        "image": "https://csyxkpbavpcrhwqhcpyy.supabase.co/storage/v1/object/public/assets/coffee-challenge/cappuccino.jpg",
-        "price": "$5.20",
-        "rating": 4.7,
-        "votes": 65,
-        "popular": true,
-        "available": true
-    }
+
+    const { coffee } = props 
+    console.log(coffee)
+
     return (
-        <div className="cardCoffee">
-            <img src={coffeExample.image}></img>
-            <span>{coffeExample.name}</span>
+        <div className="card-coffee">
+            {
+                coffee.popular && (
+                    <div className="tag-popular">Popular</div>
+                )
+            }
+            <img className="img-card-coffee" src={coffee.image}></img>
+            <div className="labels-card-coffee">
+                <span className="name-card-coffee">{coffee.name}</span>
+                <span className="tag-price-card-coffee">{coffee.price}</span>
+            </div>
+            <div className="more-labels-coffee">
+                <img src={star}></img>
+                <span className="rating-card-coffee">{coffee.rating}</span>
+                <span className="votes-card-coffee">({coffee.votes} votes)</span>
+            </div>
         </div>
     )
 }
