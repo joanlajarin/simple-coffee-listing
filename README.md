@@ -1,8 +1,3 @@
 # React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Exercise of devChallenges.io to practice react. I used useState and useEffect to fetch the data of the API provided and to change the list of coffes showed.In total I created 3 components. Coffee, ListOfCoffes and the main section to show the the information of the app and the list according to the selection. I also encapsulated the fetch of the API as a service. 
